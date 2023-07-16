@@ -13,11 +13,11 @@
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 "59 D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
 [v _main main `(i  1 e 2 0 ]
-"93
+"84
 [v _SPI_send SPI_send `(v  1 e 1 0 ]
-"118
+"103
 [v _MAX7219_Setup MAX7219_Setup `(v  1 e 1 0 ]
-"126
+"111
 [v _display display `(v  1 e 1 0 ]
 [s S40 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
@@ -49,14 +49,14 @@
 [v main@i i `ui  1 a 2 0 ]
 "68
 [v main@j j `uc  1 a 1 4 ]
-"91
+"82
 } 0
-"126
+"111
 [v _display display `(v  1 e 1 0 ]
 {
 [v display@digit_X digit_X `i  1 p 2 5 ]
 [v display@val val `i  1 p 2 7 ]
-"128
+"113
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
@@ -80,21 +80,21 @@
 [v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
 "30
 } 0
-"118 D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+"103 D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
 [v _MAX7219_Setup MAX7219_Setup `(v  1 e 1 0 ]
 {
-"124
+"109
 } 0
-"93
+"84
 [v _SPI_send SPI_send `(v  1 e 1 0 ]
 {
 [v SPI_send@addr addr `uc  1 a 1 wreg ]
-"94
+"85
 [v SPI_send@i i `i  1 a 2 3 ]
-"93
+"84
 [v SPI_send@addr addr `uc  1 a 1 wreg ]
 [v SPI_send@data data `uc  1 p 1 0 ]
-"95
+"86
 [v SPI_send@addr addr `uc  1 a 1 2 ]
-"116
+"101
 } 0

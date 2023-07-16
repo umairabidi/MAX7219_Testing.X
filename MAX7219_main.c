@@ -70,22 +70,13 @@ int main(void){
     
     for (i=0; i<1000000; i++){
         temp = i;
-        for (j=0; j<8; j++){
+        for (j=1; j<=8; j++){
             display(j, temp%10);
             temp/=10;
         }
         //__delay_ms(1);
     }
-    
-    display(1,1);
-    display(2,2);
-    display(3,3);
-    display(4,4);
-    display(5,5);
-    display(6,6);
-    display(7,7);
-    display(8,8);
-    
+   
     while(1);
     return 0;
 } 
@@ -95,20 +86,14 @@ void SPI_send(uint8_t addr, uint8_t data){
     CS = 0;
     for (i=0; i<8; i++){
         CLK = 0;
-        //__delay_us(PULSETIME);
         DIN = (addr & 0b10000000) ? 1:0 ;
-        //__delay_us(PULSETIME);
         CLK = 1;
-        //__delay_us(PULSETIME);
         addr = addr << 1;
     }
     for (i=0; i<8; i++){
         CLK = 0;
-        //__delay_us(PULSETIME);
         DIN = (data & 0b10000000) ? 1:0 ;
-        //__delay_us(PULSETIME);
         CLK = 1;
-        //__delay_us(PULSETIME);
         data = data << 1;
     }
     CLK = 0;
@@ -120,7 +105,7 @@ void MAX7219_Setup(){
     SPI_send(0x09,0xFF);        // Decode mode ON
     SPI_send(0x0A,0x03);        // Intensity level
     SPI_send(0x0B,0x07);        // Scan-Limit
-    SPI_send(0x0C,0x01);        // Shutdown (turn it on)w   
+    SPI_send(0x0C,0x01);        // Shutdown (turn it on)
 }
 
 void display(int digit_X, int val){

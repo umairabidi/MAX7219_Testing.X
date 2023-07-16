@@ -11,17 +11,17 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
+$C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
 end_init CODE 0 0 0 1 2 1
 config CONFIG 4 2007 2007 1 2 1
 $dist/default/production\MAX7219_Testing.X.production.obj
 cinit CODE 0 7FE 7FE 2 2 1
-text1 CODE 0 6ED 6ED 5 2 1
-text2 CODE 0 706 706 32 2 1
-text3 CODE 0 738 738 3C 2 1
-text4 CODE 0 6F2 6F2 14 2 1
+text1 CODE 0 6EC 6EC 5 2 1
+text2 CODE 0 705 705 32 2 1
+text3 CODE 0 737 737 3C 2 1
+text4 CODE 0 6F1 6F1 14 2 1
 text5 CODE 0 7B6 7B6 48 2 1
-maintext CODE 0 774 774 42 2 1
+maintext CODE 0 773 773 43 2 1
 cstackCOMMON COMMON 1 70 70 B 1 1
 cstackBANK0 BANK0 1 20 20 5 1 1
 config CONFIG 4 2007 2007 1 2 1
@@ -35,15 +35,15 @@ RAM 25-6F 1
 RAM A0-BF 1
 BANK0 25-6F 1
 BANK1 A0-BF 1
-CONST 1-6EC 2
-ENTRY 1-6EC 2
+CONST 1-6EB 2
+ENTRY 1-6EB 2
 IDLOC 2000-2003 2
-CODE 1-6EC 2
+CODE 1-6EB 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 COMMON 7B-7D 1
-STRCODE 1-6EC 2
-STRING 1-6EC 2
+STRCODE 1-6EB 2
+STRING 1-6EB 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -58,101 +58,101 @@ STRING 1-6EC 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\MAX7219_Testing.X.production.obj
-7FE cinit CODE >209:C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_1.as
-7FE cinit CODE >212:C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_1.as
-7FE cinit CODE >218:C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_1.as
-7FE cinit CODE >220:C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_1.as
-7FF cinit CODE >221:C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_1.as
-7B6 text5 CODE >93:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7B7 text5 CODE >95:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7B8 text5 CODE >96:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7BA text5 CODE >97:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7BC text5 CODE >99:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7C3 text5 CODE >101:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7C4 text5 CODE >103:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7C8 text5 CODE >96:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7CA text5 CODE >96:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7D3 text5 CODE >96:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7D7 text5 CODE >96:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7D9 text5 CODE >105:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7DB text5 CODE >106:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7DD text5 CODE >108:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7E4 text5 CODE >110:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7E5 text5 CODE >112:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7E9 text5 CODE >105:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7EB text5 CODE >105:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7F4 text5 CODE >105:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7F8 text5 CODE >105:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7FA text5 CODE >114:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7FC text5 CODE >115:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-7FD text5 CODE >116:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-6F2 text4 CODE >118:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-6F2 text4 CODE >119:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-6F5 text4 CODE >120:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-6F9 text4 CODE >121:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-6FD text4 CODE >122:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-701 text4 CODE >123:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-705 text4 CODE >124:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-738 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-738 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-73A text3 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-73E text3 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-740 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+7FE cinit CODE >209:C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_1.as
+7FE cinit CODE >212:C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_1.as
+7FE cinit CODE >218:C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_1.as
+7FE cinit CODE >220:C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_1.as
+7FF cinit CODE >221:C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_1.as
+7B6 text5 CODE >84:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7B7 text5 CODE >86:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7B8 text5 CODE >87:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7BA text5 CODE >88:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7BC text5 CODE >89:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7C3 text5 CODE >90:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7C4 text5 CODE >91:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7C8 text5 CODE >87:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7CA text5 CODE >87:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7D3 text5 CODE >87:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7D7 text5 CODE >87:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7D9 text5 CODE >93:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7DB text5 CODE >94:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7DD text5 CODE >95:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7E4 text5 CODE >96:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7E5 text5 CODE >97:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7E9 text5 CODE >93:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7EB text5 CODE >93:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7F4 text5 CODE >93:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7F8 text5 CODE >93:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7FA text5 CODE >99:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7FC text5 CODE >100:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+7FD text5 CODE >101:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+6F1 text4 CODE >103:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+6F1 text4 CODE >104:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+6F4 text4 CODE >105:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+6F8 text4 CODE >106:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+6FC text4 CODE >107:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+700 text4 CODE >108:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+704 text4 CODE >109:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+737 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+737 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+739 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+73D text3 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+73F text3 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+741 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
 742 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-743 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-747 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-749 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-74D text3 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+746 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+748 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+74C text3 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+74D text3 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
 74E text3 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-74F text3 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-753 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-755 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-757 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-75B text3 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-75D text3 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-760 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-763 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+752 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+754 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+756 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+75A text3 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+75C text3 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+75F text3 CODE >23:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+762 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+763 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
 764 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-765 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-769 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-76B text3 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-76F text3 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-773 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
-706 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-706 text2 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-70A text2 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-70C text2 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+768 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+76A text3 CODE >27:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+76E text3 CODE >29:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+772 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwdiv.c
+705 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+705 text2 CODE >12:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+709 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+70B text2 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+70D text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
 70E text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-70F text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-713 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-715 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-719 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-71A text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-71C text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-720 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-722 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-725 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+712 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+714 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+718 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+719 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+71B text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+71F text2 CODE >19:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+721 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+724 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+727 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
 728 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-729 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-72D text2 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-72F text2 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-733 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-737 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
-6ED text1 CODE >126:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-6ED text1 CODE >127:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-6F1 text1 CODE >128:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-774 maintext CODE >59:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-774 maintext CODE >60:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-776 maintext CODE >61:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-777 maintext CODE >62:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-778 maintext CODE >63:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-779 maintext CODE >64:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-77B maintext CODE >65:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-77C maintext CODE >66:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-77D maintext CODE >69:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-77E maintext CODE >71:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-780 maintext CODE >72:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
-784 maintext CODE >73:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+72C text2 CODE >21:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+72E text2 CODE >22:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+732 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+736 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\lwmod.c
+6EC text1 CODE >111:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+6EC text1 CODE >112:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+6F0 text1 CODE >113:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+773 maintext CODE >59:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+773 maintext CODE >60:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+775 maintext CODE >61:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+776 maintext CODE >62:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+777 maintext CODE >63:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+778 maintext CODE >64:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+77A maintext CODE >65:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+77B maintext CODE >66:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+77C maintext CODE >69:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+77D maintext CODE >71:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+77F maintext CODE >72:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
+783 maintext CODE >73:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
 785 maintext CODE >74:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
 79A maintext CODE >75:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
 7A7 maintext CODE >73:D:\Backup\Files\Personal Projects\Coding\PIC_uC\MPLAB_X_3.00\MAX7219_Testing.X\MAX7219_main.c
@@ -180,38 +180,38 @@ __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 400F 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
-_MAX7219_Setup DE4 0 CODE 0 text4 dist/default/production\MAX7219_Testing.X.production.obj
+_MAX7219_Setup DE2 0 CODE 0 text4 dist/default/production\MAX7219_Testing.X.production.obj
 main@i 20 0 BANK0 1 cstackBANK0 dist/default/production\MAX7219_Testing.X.production.obj
 main@j 24 0 BANK0 1 cstackBANK0 dist/default/production\MAX7219_Testing.X.production.obj
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
-_main EE8 0 CODE 0 maintext dist/default/production\MAX7219_Testing.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
+_main EE6 0 CODE 0 maintext dist/default/production\MAX7219_Testing.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\MAX7219_Testing.X.production.obj
-start 0 0 CODE 0 init C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
+start 0 0 CODE 0 init C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
 wtemp0 7E 0 ABS 0 - dist/default/production\MAX7219_Testing.X.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
-_display DDA 0 CODE 0 text1 dist/default/production\MAX7219_Testing.X.production.obj
+_display DD8 0 CODE 0 text1 dist/default/production\MAX7219_Testing.X.production.obj
 __Lmaintext 0 0 ABS 0 maintext -
 ___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\MAX7219_Testing.X.production.obj
-__end_of___lwdiv EE8 0 CODE 0 text3 dist/default/production\MAX7219_Testing.X.production.obj
-__end_of___lwmod E70 0 CODE 0 text2 dist/default/production\MAX7219_Testing.X.production.obj
-___stackhi 0 0 ABS 0 - C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
-___stacklo 0 0 ABS 0 - C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
+__end_of___lwdiv EE6 0 CODE 0 text3 dist/default/production\MAX7219_Testing.X.production.obj
+__end_of___lwmod E6E 0 CODE 0 text2 dist/default/production\MAX7219_Testing.X.production.obj
+___stackhi 0 0 ABS 0 - C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
+___stacklo 0 0 ABS 0 - C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
 ___lwdiv@quotient 74 0 COMMON 1 cstackCOMMON dist/default/production\MAX7219_Testing.X.production.obj
 ___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\MAX7219_Testing.X.production.obj
 start_initialization FFC 0 CODE 0 cinit dist/default/production\MAX7219_Testing.X.production.obj
-__end_of_MAX7219_Setup E0C 0 CODE 0 text4 dist/default/production\MAX7219_Testing.X.production.obj
+__end_of_MAX7219_Setup E0A 0 CODE 0 text4 dist/default/production\MAX7219_Testing.X.production.obj
 _TRISCbits 87 0 ABS 0 - dist/default/production\MAX7219_Testing.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\MAX7219_Testing.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hcinit 1000 0 CODE 0 cinit -
@@ -246,10 +246,10 @@ SPI_send@addr 72 0 COMMON 1 cstackCOMMON dist/default/production\MAX7219_Testing
 SPI_send@data 70 0 COMMON 1 cstackCOMMON dist/default/production\MAX7219_Testing.X.production.obj
 __end_of_SPI_send FFC 0 CODE 0 text5 dist/default/production\MAX7219_Testing.X.production.obj
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Umair\AppData\Local\Temp\xcAspdc.\driver_tmp_9.obj
-___lwdiv E70 0 CODE 0 text3 dist/default/production\MAX7219_Testing.X.production.obj
-___lwmod E0C 0 CODE 0 text2 dist/default/production\MAX7219_Testing.X.production.obj
-__pmaintext EE8 0 CODE 0 maintext dist/default/production\MAX7219_Testing.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Umair\AppData\Local\Temp\xcAs7hg.\driver_tmp_9.obj
+___lwdiv E6E 0 CODE 0 text3 dist/default/production\MAX7219_Testing.X.production.obj
+___lwmod E0A 0 CODE 0 text2 dist/default/production\MAX7219_Testing.X.production.obj
+__pmaintext EE6 0 CODE 0 maintext dist/default/production\MAX7219_Testing.X.production.obj
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
 main@temp 22 0 BANK0 1 cstackBANK0 dist/default/production\MAX7219_Testing.X.production.obj
@@ -271,10 +271,10 @@ ___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\MAX7219_Tes
 ?___lwmod 70 0 COMMON 1 cstackCOMMON dist/default/production\MAX7219_Testing.X.production.obj
 __Hreset_vec 0 0 CODE 0 reset_vec -
 display@val 77 0 COMMON 1 cstackCOMMON dist/default/production\MAX7219_Testing.X.production.obj
-__ptext1 DDA 0 CODE 0 text1 dist/default/production\MAX7219_Testing.X.production.obj
-__ptext2 E0C 0 CODE 0 text2 dist/default/production\MAX7219_Testing.X.production.obj
-__ptext3 E70 0 CODE 0 text3 dist/default/production\MAX7219_Testing.X.production.obj
-__ptext4 DE4 0 CODE 0 text4 dist/default/production\MAX7219_Testing.X.production.obj
+__ptext1 DD8 0 CODE 0 text1 dist/default/production\MAX7219_Testing.X.production.obj
+__ptext2 E0A 0 CODE 0 text2 dist/default/production\MAX7219_Testing.X.production.obj
+__ptext3 E6E 0 CODE 0 text3 dist/default/production\MAX7219_Testing.X.production.obj
+__ptext4 DE2 0 CODE 0 text4 dist/default/production\MAX7219_Testing.X.production.obj
 __ptext5 F6C 0 CODE 0 text5 dist/default/production\MAX7219_Testing.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
@@ -282,7 +282,7 @@ __H__absolute__ 0 0 ABS 0 __absolute__ -
 __Lreset_vec 0 0 CODE 0 reset_vec -
 __end_of__initialization FFC 0 CODE 0 cinit dist/default/production\MAX7219_Testing.X.production.obj
 __Lfunctab 0 0 ENTRY 0 functab -
-__end_of_display DE4 0 CODE 0 text1 dist/default/production\MAX7219_Testing.X.production.obj
+__end_of_display DE2 0 CODE 0 text1 dist/default/production\MAX7219_Testing.X.production.obj
 __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\MAX7219_Testing.X.production.obj
 __Hend_init 2 0 CODE 0 end_init -
@@ -318,12 +318,12 @@ __initialization FFC 0 CODE 0 cinit dist/default/production\MAX7219_Testing.X.pr
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FE FFC 2 2
-text1 0 6ED DDA 5 2
-text2 0 706 E0C 32 2
-text3 0 738 E70 3C 2
-text4 0 6F2 DE4 14 2
+text1 0 6EC DD8 5 2
+text2 0 705 E0A 32 2
+text3 0 737 E6E 3C 2
+text4 0 6F1 DE2 14 2
 text5 0 7B6 F6C 48 2
-maintext 0 774 EE8 42 2
+maintext 0 773 EE6 43 2
 cstackCOMMON 1 70 70 B 1
 cstackBANK0 1 20 20 5 1
 reset_vec 0 0 0 1 2
