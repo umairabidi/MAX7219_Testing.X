@@ -1527,38 +1527,50 @@ extern __bank0 __bit __timeout;
 #pragma config IOSCFS = 8MHZ
 #pragma config BOREN = OFF
 
-# 32
+# 34
 void SPI_send(uint8_t addr, uint8_t data);
+void MAX7219_Setup();
+void display(int digit_X, int val);
+void display_decimal(int digit_X, int val);
+void blink(int digit_X, int frequency);
+void blank(int digit_X);
+void turnOff();
+void turnOn(int digit_X);
+void digTest(int state);
+void setIntensity(int intensity);
 
+# 59
 int main(void){
-
 TRISCbits.TRISC2 = 0;
 TRISCbits.TRISC1 = 0;
 TRISCbits.TRISC0 = 0;
 ANSEL = 0;
-
 PORTCbits.RC0 = 0;
 PORTCbits.RC1 = 1;
 PORTCbits.RC2 = 0;
+uint16_t i, temp;
+uint8_t j;
+MAX7219_Setup();
 
-int i;
-_delay((unsigned long)((4000)*(8000000/4000.0)));
-SPI_send(0x0F,0x00);
-
-SPI_send(0x09,0xFF);
-SPI_send(0x0A,0x03);
-SPI_send(0x0B,0x07);
-SPI_send(0x0C,0x01);
-
-SPI_send(0x01,0x86);
-SPI_send(0x02,0x85);
-SPI_send(0x03,0x84);
-SPI_send(0x04,0x83);
-SPI_send(0x05,0x82);
-
-
-while(1){
+for (i=0; i<1000000; i++){
+temp = i;
+for (j=0; j<8; j++){
+display(j, temp%10);
+temp/=10;
 }
+
+}
+
+display(1,1);
+display(2,2);
+display(3,3);
+display(4,4);
+display(5,5);
+display(6,6);
+display(7,7);
+display(8,8);
+
+while(1);
 return 0;
 }
 
@@ -1567,22 +1579,58 @@ int i;
 PORTCbits.RC1 = 0;
 for (i=0; i<8; i++){
 PORTCbits.RC0 = 0;
-_delay((unsigned long)((50)*(8000000/4000000.0)));
+
 PORTCbits.RC2 = (addr & 0b10000000) ? 1:0 ;
-_delay((unsigned long)((50)*(8000000/4000000.0)));
+
 PORTCbits.RC0 = 1;
-_delay((unsigned long)((50)*(8000000/4000000.0)));
+
 addr = addr << 1;
 }
 for (i=0; i<8; i++){
 PORTCbits.RC0 = 0;
-_delay((unsigned long)((50)*(8000000/4000000.0)));
+
 PORTCbits.RC2 = (data & 0b10000000) ? 1:0 ;
-_delay((unsigned long)((50)*(8000000/4000000.0)));
+
 PORTCbits.RC0 = 1;
-_delay((unsigned long)((50)*(8000000/4000000.0)));
+
 data = data << 1;
 }
 PORTCbits.RC0 = 0;
 PORTCbits.RC1 = 1;
+}
+
+void MAX7219_Setup(){
+SPI_send(0x0F,0x00);
+SPI_send(0x09,0xFF);
+SPI_send(0x0A,0x03);
+SPI_send(0x0B,0x07);
+SPI_send(0x0C,0x01);
+}
+
+void display(int digit_X, int val){
+SPI_send(digit_X, val);
+}
+void display_decimal(int digit_X, int val){
+SPI_send(digit_X, 0b10000000 | val);
+}
+void blink(int digit_X, int frequency){
+
+}
+void blank(int digit_X){
+SPI_send(digit_X, 0x0F);
+}
+void turnOff(){
+SPI_send(0x0C,0x0F);
+
+}
+void turnOn(int digit_X){
+SPI_send(0x0C,0x01);
+}
+void digTest(int state){
+
+
+SPI_send(0x0F, 0x00 | !state);
+}
+void setIntensity(int intensity){
+SPI_send(0x0A, intensity);
 }
