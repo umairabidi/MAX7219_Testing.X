@@ -27,7 +27,6 @@
 #define DIN PORTCbits.RC2
 #define CS  PORTCbits.RC1
 #define CLK PORTCbits.RC0
-#define PULSETIME 1
 #define ON 1
 #define OFF 0
 
@@ -42,19 +41,6 @@ void turnOn(int digit_X);
 void digTest(int state);
 void setIntensity(int intensity);
 
-
-/* Required Functions:
- * Illuminate digit X               turnOn(X)
- * Give digit X a value             display(X, value)
- * Give digit X a decimal point     decimal(X)
- * Blink Digit X                    blink(X)
- * Blank digit X                    blank(X)
- * Blank all digits (shutdown)      blankAll()
- * Illuminate all segments          digTest()
- * Set Brightness?                  setIntensity()
- * 
- 
-*/
 
 int main(void){
     TRISCbits.TRISC2 = 0;   // Set as output
@@ -128,10 +114,8 @@ void turnOn(int digit_X){
     SPI_send(0x0C,0x01);
 }
 void digTest(int state){
-    // If state is 0 or ON, turn off Display Test
-    // If state is 1 or OFF, turn on Display Test
     SPI_send(0x0F, 0x00 | !state);
 }
-void setIntensity(int intensity){
+void setIntensity(int intensity){	// 0 to 15
     SPI_send(0x0A, intensity);
 }
